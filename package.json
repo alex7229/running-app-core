@@ -1,0 +1,11 @@
+{
+  "name": "running_app_core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tup1tsa/running_app_core",
+  "author": "tup1tsa <natorvano@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/test.js -c config/jest/commonConfig.js --colors --watch"
+  }
+}
