@@ -1,6 +1,5 @@
 import { validateEmail } from "../../application/validators/validateEmail";
 
-
 it("should validate email properly", () => {
   expect(validateEmail("non email")).toBe(false);
   expect(validateEmail("some@gmail.com")).toBe(true);

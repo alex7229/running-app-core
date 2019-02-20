@@ -57,8 +57,6 @@ export interface MomentInterface {
   };
 }
 
-export interface DateClass {
-  new (time: number): {
-    toLocaleTimeString: () => string;
-  };
-}
+export type DateClass = new (time: number) => {
+  toLocaleTimeString: () => string;
+};
