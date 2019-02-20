@@ -1,7 +1,7 @@
 {
   "name": "running_app_core",
   "version": "1.0.0",
-  "main": "change it",
+  "main": "dist/index.js",
   "repository": "https://github.com/tup1tsa/running_app_core",
   "author": "tup1tsa <natorvano@gmail.com>",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "test": "node scripts/test.js -c config/jest/commonConfig.js --colors --watch",
     "test:pre-commit": "node scripts/test.js -c config/jest/commonConfig.js --colors",
     "test:debug": "node --inspect-brk scripts/test.js --runInBand -c config/jest/commonConfig.js",
-    "validate-typescript": "tsc",
+    "build-typescript": "tsc",
     "validate-tslint": "tslint 'src/**/*.ts'"
   },
   "dependencies": {
@@ -17,7 +17,7 @@
   },
   "pre-commit": [
     "test:pre-commit",
-    "validate-typescript",
+    "build-typescript",
     "validate-tslint"
   ],
   "devDependencies": {
