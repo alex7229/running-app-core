@@ -1,7 +1,6 @@
 import { PositionInTime } from "../../application/interfaces";
 import { validatePath } from "../../application/validators/validatePath";
 
-
 it("path should be an array", () => {
   expect(validatePath("asd")).toBe(false);
 });

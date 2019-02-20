@@ -1,7 +1,6 @@
 import { PositionInTime } from "../../application/interfaces";
 import { validateRacesFactory } from "../../application/validators/validateRaces";
 
-
 const successPathValidator = (
   path: unknown
 ): path is ReadonlyArray<PositionInTime> => true;

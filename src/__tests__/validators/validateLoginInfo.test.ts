@@ -1,6 +1,5 @@
 import { validateLoginInfo } from "../../application/validators/validateLoginInfo";
 
-
 const defaultLoginInfo = {
   email: "some@gmail.com",
   password: "abgasb"
