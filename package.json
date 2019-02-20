@@ -9,7 +9,7 @@
     "test": "node scripts/test.js -c config/jest/commonConfig.js --colors --watch",
     "test:pre-commit": "node scripts/test.js -c config/jest/commonConfig.js --colors",
     "test:debug": "node --inspect-brk scripts/test.js --runInBand -c config/jest/commonConfig.js",
-    "build-typescript": "tsc",
+    "build": "tsc",
     "validate-tslint": "tslint 'src/**/*.ts'"
   },
   "dependencies": {
@@ -17,7 +17,7 @@
   },
   "pre-commit": [
     "test:pre-commit",
-    "build-typescript",
+    "build",
     "validate-tslint"
   ],
   "devDependencies": {
