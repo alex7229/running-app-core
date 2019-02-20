@@ -8,14 +8,16 @@
   "scripts": {
     "test": "node scripts/test.js -c config/jest/commonConfig.js --colors --watch",
     "test:pre-commit": "node scripts/test.js -c config/jest/commonConfig.js --colors",
-    "test:debug": "node --inspect-brk scripts/test.js --runInBand -c config/jest/commonConfig.js"
+    "test:debug": "node --inspect-brk scripts/test.js --runInBand -c config/jest/commonConfig.js",
+    "validate-typescript": "tsc"
   },
   "dependencies": {
     "ajv": "^6.9.1",
     "jest": "^24.1.0"
   },
   "pre-commit": [
-    "test:pre-commit"
+    "test:pre-commit",
+    "validate-typescript"
   ],
   "devDependencies": {
     "@types/jest": "^24.0.6",
