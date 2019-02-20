@@ -16,9 +16,9 @@
     "ajv": "^6.9.1"
   },
   "pre-commit": [
-    "test:pre-commit",
     "build",
-    "validate-tslint"
+    "validate-tslint",
+    "test:pre-commit"
   ],
   "devDependencies": {
     "@types/jest": "^24.0.6",
