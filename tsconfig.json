@@ -3,6 +3,7 @@
     "module": "esnext",
     "target": "es5",
     "lib": ["es2017", "dom"],
+    "types": ["node", "jest"],
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,

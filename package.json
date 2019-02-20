@@ -13,8 +13,7 @@
     "validate-tslint": "tslint 'src/**/*.ts'"
   },
   "dependencies": {
-    "ajv": "^6.9.1",
-    "jest": "^24.1.0"
+    "ajv": "^6.9.1"
   },
   "pre-commit": [
     "test:pre-commit",
@@ -23,6 +22,8 @@
   ],
   "devDependencies": {
     "@types/jest": "^24.0.6",
+    "@types/node": "^11.9.4",
+    "jest": "^24.1.0",
     "pre-commit": "^1.2.2",
     "ts-jest": "^24.0.0",
     "tslint": "^5.12.1",
