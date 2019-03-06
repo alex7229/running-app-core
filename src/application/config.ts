@@ -39,5 +39,9 @@ export const MESSAGES = {
   racesAreNotValid: "Races are not valid",
   registrationSuccess: "Account was successfully registered",
   requestTimeout:
-    "Server hasn't responded in time. It is either down or there is no internet"
+    "Server hasn't responded in time. It is either down or there is no internet",
+  verificationEmailPartOne: "Verification link was sent to ",
+  vereificationEmailPartTwo: ". Please, check your email",
+  passwordResetMessage:
+    "Email with instructions will be send to this email, if user with such email is registered"
 };
