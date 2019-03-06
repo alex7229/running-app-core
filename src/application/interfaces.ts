@@ -35,6 +35,21 @@ export interface RegularRegistrationInfo {
   readonly password: string;
 }
 
+export interface HashedUserInfo {
+  readonly name: string;
+  readonly email: string;
+  readonly passwordHash: string;
+  readonly salt: string;
+  readonly accessToken: string;
+}
+
+export interface TotalUserInfo extends HashedUserInfo {
+  readonly _id?: string;
+  readonly isEmailVerified: boolean;
+  readonly passwordResetLink: string;
+  readonly emailVerificationLink: string;
+}
+
 export interface RegularLoginInfo {
   readonly email: string;
   readonly password: string;
