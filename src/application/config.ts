@@ -28,16 +28,15 @@ export const raceSettings = {
 export const delayBetweenGeoCalls = 10;
 export const minimumDistanceDiffBetweenPositions = 10;
 
-export const MESSAGES = [
-  "Unexpected error occured",
-  "Race was saved successfully.",
-  "There is no internet connection.",
-  "Unexpected server error",
-  "There is nothing to save",
-  "User info is invalid",
-  "User with that name or email already exists",
-  "Email or password are incorrect",
-  "Races are not valid",
-  "Account was successfully registered",
-  "Server hasn't responded in time. It is either down or there is no internet"
-];
+export const MESSAGES = {
+  unexpectectedError: 'Unexpected error occured',
+  raceSavedSuccess: 'Race was saved successfully',
+  noInternet: 'There is no internet connection',
+  nothingToSave: 'There is nothing to save',
+  userInfoInvalid: 'User info is invalid',
+  userAlreadyExists: 'User with that name or email already exists',
+  emailPasswordIncorrect: 'Email or password are incorrect',
+  racesAreNotValid: 'Races are not valid',
+  registrationSuccess: 'Account was successfully registered',
+  requestTimeout: "Server hasn't responded in time. It is either down or there is no internet"
+}
