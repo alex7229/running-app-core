@@ -5,26 +5,17 @@ export {
 } from "./application/validators/custom/validatePassword";
 
 export {
-  validateLoginInfo,
-  ValidateLoginInfo
+  validateLoginInfo
 } from "./application/validators/custom/validateLoginInfo";
 export {
-  validatePublicUserInfo,
-  ValidatePublicUserInfo
+  validatePublicUserInfo
 } from "./application/validators/custom/validatePublicUserInfo";
 export {
-  validateRegistrationInfo,
-  ValidateRegistrationInfo
+  validateRegistrationInfo
 } from "./application/validators/custom/validateRegistrationInfo";
 
-export {
-  validatePath,
-  ValidatePath
-} from "./application/validators/custom/validatePath";
-export {
-  validateRaces,
-  ValidateRaces
-} from "./application/validators/custom/validateRaces";
+export { validatePath } from "./application/validators/custom/validatePath";
+export { validateRaces } from "./application/validators/custom/validateRaces";
 
 export * from "./application/interfaces";
 export * from "./application/config";
