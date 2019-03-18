@@ -59,7 +59,7 @@ export interface RegularLoginInfo {
 export interface PublicUserInfo {
   readonly name: string;
   readonly email: string;
-  readonly isEmailVerified: string;
+  readonly isEmailVerified: boolean;
 }
 
 export type GetPath = (positions: ReadonlyArray<PositionInTime>) => number;
