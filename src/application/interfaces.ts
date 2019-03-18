@@ -33,6 +33,7 @@ export interface RegularRegistrationInfo {
   readonly name: string;
   readonly email: string;
   readonly password: string;
+  readonly passwordConfirmation: string;
 }
 
 export interface HashedUserInfo {
@@ -53,6 +54,12 @@ export interface TotalUserInfo extends HashedUserInfo {
 export interface RegularLoginInfo {
   readonly email: string;
   readonly password: string;
+}
+
+export interface PublicUserInfo {
+  readonly name: string;
+  readonly email: string;
+  readonly isEmailVerified: string;
 }
 
 export type GetPath = (positions: ReadonlyArray<PositionInTime>) => number;

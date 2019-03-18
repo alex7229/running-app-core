@@ -1,4 +1,4 @@
-import { validateLoginInfo } from "../../application/validators/validateLoginInfo";
+import { validateLoginInfo } from "../../../application/validators/custom/validateLoginInfo";
 
 const defaultLoginInfo = {
   email: "some@gmail.com",
@@ -31,4 +31,8 @@ it("password should be in 5-128 range", () => {
 
 it("should validate correct  info", () => {
   expect(validateLoginInfo(defaultLoginInfo)).toBe(true);
+});
+
+it("should not validate if fields are missing", () => {
+  expect(validateLoginInfo({})).toBe(false);
 });

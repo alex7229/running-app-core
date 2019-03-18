@@ -1,4 +1,4 @@
-import { validateEmail } from "../../application/validators/validateEmail";
+import { validateEmail } from "../../../application/validators/custom/validateEmail";
 
 it("should validate email properly", () => {
   expect(validateEmail("non email")).toBe(false);

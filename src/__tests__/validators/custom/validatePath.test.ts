@@ -1,5 +1,5 @@
-import { PositionInTime } from "../../application/interfaces";
-import { validatePath } from "../../application/validators/validatePath";
+import { PositionInTime } from "../../../application/interfaces";
+import { validatePath } from "../../../application/validators/custom/validatePath";
 
 it("path should be an array", () => {
   expect(validatePath("asd")).toBe(false);
@@ -21,10 +21,15 @@ it("path should have at least two points", () => {
 
 it("every point should have lat, lng and time props -> all numbers", () => {
   const wrongProps = [{ latit: 23, asd: 23 }, {}];
+  const missingProps = [
+    { latitude: 23, longitude: 117 },
+    { latitude: 124, longitude: 25, time: 2342 }
+  ];
   const wrongValues = [
     { latitude: "23", longitude: 44, time: 23 },
     { latitude: 23, longitude: 63, time: "24" }
   ];
+  expect(validatePath(missingProps)).toBe(false);
   expect(validatePath(wrongProps)).toBe(false);
   expect(validatePath(wrongValues)).toBe(false);
 });
